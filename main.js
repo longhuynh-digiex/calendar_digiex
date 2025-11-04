@@ -91,14 +91,14 @@ prevYear.addEventListener("click", () => {
   renderView(lastYear);
 });
 nextMonth.addEventListener("click", () => {
-  const lastMonth = new Date(today.setMonth(today.getMonth() + 1));
+  const nextMonth = new Date(today.setMonth(today.getMonth() + 1));
  
   
-  renderView(lastMonth);
+  renderView(nextMonth);
 });
 nextYear.addEventListener("click", () => {
-  const lastYear = new Date(today.setFullYear(today.getFullYear() + 1));
-  renderView(lastYear);
+  const nextYear = new Date(today.setFullYear(today.getFullYear() + 1));
+  renderView(nextYear);
 });
 current.addEventListener("click", () => {
   today = new Date();
