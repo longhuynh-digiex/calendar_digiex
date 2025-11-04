@@ -18,6 +18,7 @@
       <!-- calendar view -->
       <div class="table">
         <div class="table__title">
+         
             <div class="content">CN</div>
             <div class="content">T2</div>
             <div class="content">T3</div>
@@ -25,6 +26,7 @@
             <div class="content">T5</div>
             <div class="content">T6</div>
             <div class="content">T7</div>
+            
            
         </div>
         
@@ -32,19 +34,19 @@
 
       <!-- navigator -->
       <div class="nav">
-        <div class="nav__items">&lt&lt</div>
-        <div class="nav__items">&lt</div>
+        <div class="nav__items" id="prev-year">&lt&lt</div>
+        <div class="nav__items" id="prev-month">&lt</div>
         <div class="nav__items">
-          <select name="dates" id="dates">
-            <option value="1">1</option>
+          <select name="dates" id="dates-select">
+            <!-- <option value="1">1</option> -->
           </select>
         </div>
         <div class="nav__items">
           <span>/</span>
         </div>
         <div class="nav__items">
-          <select name="months" id="months">
-            <option value="1">1</option>
+          <select name="months" id="months-select">
+            <!-- <option value="1">1</option> -->
           </select>
         </div>
 
@@ -52,14 +54,14 @@
           <span>/</span>
         </div>
         <div class="nav__items">
-          <input type="number" />
+          <input type="number" id="year-input"/>
         </div>
-        <div class="nav__items">
+        <div class="nav__items" id="browse-date">
           <span>OK</span>
         </div>
-        <div class="nav__items">&gt</div>
-        <div class="nav__items">&gt</div>
-        <div class="nav__items">@</div>
+        <div class="nav__items" id="next-month">&gt</div>
+        <div class="nav__items" id="next-year">&gt&gt</div>
+        <div class="nav__items" id="current">@</div>
       </div>
     </container>
 

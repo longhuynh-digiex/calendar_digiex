@@ -55,6 +55,9 @@ body {
     margin-top: 30px;
     justify-content: center;
 }
+.nav__items {
+    cursor: pointer;
+}
 .content.selected {
     background-color: yellowgreen;
 }
